@@ -77,13 +77,90 @@
                     </div>
                     <fieldset>
                         <legend>¿Pertenece a algún club o equipo de atletismo?</legend>
-                        <br>
                         <label><input type="radio" name="pertenecia" value="SI" required>SI</label><br>
                         <label><input type="radio" name="pertenecia" value="NO" required>NO</label><br>
                         <label><input type="radio" name="pertenecia" value=" O" required>Otro:</label>
                         <input type="text" name="pertenecia_otro" placeholder="¿Cuál?">
                     </fieldset>
-                </fieldset>
+                </fieldset><br>
+            </form>
+        </section>
+        <section>
+            <form>
+            <fieldset>
+                <legend>Información sobre la compentencia</legend>
+                <div>
+                    <label for="intento">¿Es la primera vez que participa en una compentencia?</label><br>
+                    <input type="radio" name="intento" value="NO" required>NO
+                    <input type="radio" name="intento" value="SI" required>SI
+                    ¿Cuántas?<input type="number" name="num_intentos" placeholder="Ingrese el número de veces que ha participado">
+                    <br><br>
+                </div>
+                <div>
+                    <label for="categoria">Categoria: </label>
+                    <select id="categoria" name="categoria" required>
+                        <option value=""selected>Seleccione una opción</option>
+                        <option value="IN">Infantil</option>
+                        <option value="JV">Juvenil</option>
+                        <option value="MY">Adultos</option>
+                        <option value="MS">Master</option>
+                    </select>
+                    <br><br>
+                </div>
+                <div>
+                    <label for="experiencia">Nivel de experiencia como atleta:</label><br>
+                    <input type="radio" name="experiencia" value="Princ" required>Principiante<br>
+                    <input type="radio" name="experiencia" value="Inter" required>Intermedio<br>
+                    <input type="radio" name="experiencia" value="Advc" required>Avanzado
+                    <br><br>
+                </div>
+                <fieldset>
+                    <legend>¿En cuál disciplina desea competir?</legend>
+                    <fieldset>
+                        <legend>Carrera</legend>
+                            <label><input type="radio" name="subcategoria" value="100m">100 METROS</label><br>
+                            <label><input type="radio" name="subcategoria" value="400m">400 METROS</label><br>
+                            <label><input type="radio" name="subcategoria" value="1500m">1500 METROS</label><br>
+                            <label><input type="radio" name="subcategoria" value="maraton">MARATÓN</label><br>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Salto</legend>
+                            <label><input type="radio" name="subcategoria" value="sal_largo">Salto largo</label><br>
+                            <label><input type="radio" name="subcategoria" value="sal_alto">Salto alto</label><br>
+                            <label><input type="radio" name="subcategoria" value="sal_pertiga">Salto con pértiga</label><br>
+                            <label><input type="radio" name="subcategoria" value="sal_triple">Salto Triple</label><br>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Lanzamiento</legend>
+                            <label><input type="radio" name="subcategoria" value="lanz_bala">Lanzamiento de bala</label><br>
+                            <label><input type="radio" name="subcategoria" value="lanz_disco">Lanzamiento de disco</label><br>
+                            <label><input type="radio" name="subcategoria" value="lanz_jabalina">Lanzamiento de jabalina</label><br>
+                            <label><input type="radio" name="subcategoria" value="lanz_martillo">Lanzamiento de martillo</label>
+                    </fieldset>
+                </fieldset><br>
+                <fieldset>
+                    <legend>¿Cómo se entero del evento?</legend>
+                    <label><input type="checkbox" name="evento" value="social_media">Redes Sociales</label><br>
+                    <label><input type="checkbox" name="evento" value="Friends">Recomendación de amigos/conocidos</label><br>
+                    <label><input type="checkbox" name="evento" value="club">Club deportivo</label><br>
+                    <label><input type="checkbox" name="evento" value="Adver">Anuncio</label><br>
+                    <label><input type="checkbox" name="evento" value="other">Otro</label>
+                    <input type="text" name="info_otro" placeholder="¿Cuál?">
+                    <br>
+                </fieldset><br>
+                <div>
+                    <label for="condicion">¿Tiene alguna condición médica que debamos conocer?</label><br>
+                    <input type="radio" name="condicion" value="NO"> NO <br>
+                    <input type="radio" name="condicion" value="SI"> SI 
+                    <input type="text" name="info_condicion" placeholder="Especifique">
+                    <br><br>
+                </div>
+                <div>
+                    <label for="info_competencia">¿Está interesado en recibir información sobre futuras competencias?</label><br>
+                    <input type="radio" name="info" value="NO"> NO <br>
+                    <input type="radio" name="info" value="SI"> SI
+                </div>
+            </fieldset> 
             </form>
         </section>
 </body>
