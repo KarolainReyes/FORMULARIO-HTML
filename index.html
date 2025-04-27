@@ -29,8 +29,60 @@
                 <fieldset>
                     <legend>Información personal</legend>
                     <div>
-                        
+                        <label for="nombre">Nombre completo: </label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" required>
+                        <br><br>
                     </div>
+                    <div>
+                        <label for="tipo">Tipo de documento: </label>
+                        <select name="tipo" id="tipo" required> 
+                            <option value=""selected>Seleccione una opción</option>
+                            <option value="TI">Tarjeta de identidad</option>
+                            <option value="CC">Cedula de ciudadania</option>
+                            <option value="CE">Cedula de extranjería</option>
+                        </select>
+                        <br><br>
+                    </div>
+                    <div>
+                        <label for="numero">Número de documento: </label>
+                        <input type="text" name="numero" id="numero" pattern="[0-9]{6,12}" placeholder="Escriba su numero de documento" required>
+                        <br><br>
+                    </div>
+                    <div>
+                        <label for="nacimiento">Fecha de nacimiento: </label>
+                        <input type="date" name="nacimiento" id="nacimiento" required>
+                        <br><br>
+                    </div>
+                    <fieldset>
+                        <legend>Género: </legend>
+                        <label><input type="radio" name="gen" value="M" required>Masculino</label><br>
+                        <label><input type="radio" name="gen" value="F" required>Femenino</label><br>
+                        <label><input type="radio" name="gen" value="O" required>Otro</label><br>
+                        <label><input type="radio" name="gen" value="NE" required>No especificado</label>
+                    </fieldset><br>
+                    <div>
+                        <label for="email">Correo electrónico: </label>
+                        <input type="email" name="email"  id="email" placeholder="Escriba su correo electrónico" required>
+                        <br><br>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono: </label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Escriba su número de teléfono"required>
+                        <br><br>
+                    </div>
+                    <div>
+                        <label for="ciudad">Ciudad/Municipio: </label>
+                        <input type="text" name="ciudad" id="ciudad" placeholder="Escriba la ciudad de residencia" required>
+                        <br><br>
+                    </div>
+                    <fieldset>
+                        <legend>¿Pertenece a algún club o equipo de atletismo?</legend>
+                        <br>
+                        <label><input type="radio" name="pertenecia" value="SI" required>SI</label><br>
+                        <label><input type="radio" name="pertenecia" value="NO" required>NO</label><br>
+                        <label><input type="radio" name="pertenecia" value=" O" required>Otro:</label>
+                        <input type="text" name="pertenecia_otro" placeholder="¿Cuál?">
+                    </fieldset>
                 </fieldset>
             </form>
         </section>
